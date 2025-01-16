@@ -18,7 +18,7 @@ def check_process(p:mp.Process):
     """
     if not p.is_alive():
         lab["text"] = "20"  # pylint: disable=E0606
-        root.after(2000, check_process, p)  # pylint: disable=E0606
+    root.after(2000, check_process, p)  # pylint: disable=E0606
 
 
 def process():
